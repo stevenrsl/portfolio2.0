@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Antoine Corniere - About Me</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css'>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xdp4rue.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="brand"><h1 class="brand-title"><a href="../index.html">Antøine Cørniere</a><span class="bar"></span>
+    </h1>
+    </div>
+    <div class="h-menu">
+        <div class="menu" id="menu">
+            <span class="span-menu"></span>
+            <span class="span-menu"></span>
+            <span class="span-menu"></span>
+        </div>
+    </div>
+</div>
+<nav class="overlay" id="overlay">
+    <div class="brand-overlay"><h1>Antøine Cørniere<span class="bar-overlay"></span></h1></div>
+    <span class="lg-bar"></span>
+    <div class="overlay-content">
+        <div class="nav">
+            <a href="../index.html" class="nav-link ">Home</a>
+            <a href="about.html" class="nav-link ">About Me</a>
+            <a href="contact.html" class="nav-link active-link">Contact</a>
+        </div>
+    </div>
+    <div class="social-overlay">
+        <a href="#" class="s-link-overlay strikethrough">Instagram</a>
+        <span class="slash-white"></span>
+        <a href="#" class="s-link-overlay strikethrough">YouTube</a>
+    </div>
+</nav>
+<div class="contact">
+    <h2 class="contact-title">Let's work together <span class="contact-bar"></span></h2>
+    <p>For all professional requests, please send me an email at the following address, by clicking on it.</p>
+    <div class="mail">
+        <span id="email" class="strikethrough-black">contact@antoinecorniere.com</span>
+    </div>
+    <div class="slide-btn-contact">
+        <a href="https://www.instagram.com/antocrne/" target="_blank" class="PreviousBtn strikethrough-black">Instagram</a>
+        <span class="slash-contact"></span>
+        <a href="#" class="NextBtn strikethrough-black">YouTube</a>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js'></script>
+<script src="../assets/js/script.js"></script>
+<script>
+    $("#email").click(function() {
+
+        if (document.selection) { // IE
+            var range = document.body.createTextRange();
+            range.moveToElementText(document.getElementById("email"));
+            range.select();
+        } else if (window.getSelection) {
+            var range = document.createRange();
+            range.selectNode(document.getElementById("email"));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+        }
+        document.execCommand("copy");
+
+        if (window.getSelection) {
+            window.getSelection().removeAllRanges();
+        }
+        else if (document.selection) {
+            document.selection.empty();
+        }
+
+        var posEmailX = $("#email").offset().left;
+        var posEmailY = $("#email").offset().top;
+        var emailHeight = $("#email").height();
+        let emailContent = document.getElementById("email").innerHTML;
+
+        document.getElementById("email").innerHTML = "Email copied to clipboard";
+
+        setTimeout(function(){
+            document.getElementById("email").innerHTML = "contact@antoinecorniere.com";
+        }, 1200);
+    });
+</script>
+</body>
+</html>

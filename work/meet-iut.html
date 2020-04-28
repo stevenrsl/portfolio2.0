@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Antoine Corniere - Filmmaker & Photographer</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.min.css'>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xdp4rue.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+<div class="navbar">
+    <div class="brand"><h1 class="brand-title"><a href="../index.html">Antøine Cørniere</a><span class="bar"></span>
+    </h1></div>
+    <div class="h-menu">
+        <div class="menu" id="menu">
+            <span class="span-menu"></span>
+            <span class="span-menu"></span>
+            <span class="span-menu"></span>
+        </div>
+    </div>
+</div>
+<nav class="overlay" id="overlay">
+    <div class="brand-overlay"><h1>Antøine Cørniere <span class="bar-overlay"></span></h1></div>
+    <span class="lg-bar"></span>
+    <div class="overlay-content">
+        <div class="nav">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../pages/about.html" class="nav-link">About Me</a>
+            <a href="../pages/contact.html" class="nav-link ">Contact</a>
+        </div>
+    </div>
+    <div class="social-overlay">
+        <a href="#" class="s-link-overlay strikethrough">Instagram</a>
+        <span class="slash-white"></span>
+        <a href="#" class="s-link-overlay strikethrough">YouTube</a>
+    </div>
+</nav>
+<div class="work-content">
+    <h3 class="film-title" data-aos="fade-in" data-aos-delay="800">Meet-iut — Aftermovie</h3>
+    <iframe class="iframe-film" data-aos="fade-down" src="https://player.vimeo.com/video/312680660" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    <div class="w-button-left">
+        <a href="deep-in-paris.html" class="link-w"><span class="w-bar-left"></span>Previous Project</a>
+    </div>
+    <div class="w-button-right">
+        <a href="smeels-2k19.html" class="link-w"><span class="w-bar-right"></span>Next Project</a>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js'></script>
+<script src="../assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+</script>
+</body>
+</html>

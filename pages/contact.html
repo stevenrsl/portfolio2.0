@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>Antoine Corniere - About Me</title>
+    <title>Contact - Steven Roussel</title>
+    <link rel="icon" type="image/svg" href="../assets/images/compass.svg">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
     <link rel='stylesheet'
           href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.min.css'>
@@ -13,44 +14,47 @@
     <link rel="stylesheet" href="https://use.typekit.net/xdp4rue.css">
 </head>
 <body>
-<div class="navbar">
-    <div class="brand"><h1 class="brand-title"><a href="../index.html">Antøine Cørniere</a><span class="bar"></span>
-    </h1>
+  <div class="navbar">
+    <div class="brand">
+      <h1 class="brand-title"><a href="../index.html">Steven Roussel</a><span class="bar"></span>
+      </h1>
     </div>
     <div class="h-menu">
-        <div class="menu" id="menu">
-            <span class="span-menu"></span>
-            <span class="span-menu"></span>
-            <span class="span-menu"></span>
-        </div>
+      <div class="menu" id="menu">
+        <span class="span-menu"></span>
+        <span class="span-menu"></span>
+        <span class="span-menu"></span>
+      </div>
     </div>
-</div>
-<nav class="overlay" id="overlay">
-    <div class="brand-overlay"><h1>Antøine Cørniere<span class="bar-overlay"></span></h1></div>
+  </div>
+  <nav class="overlay" id="overlay">
+    <div class="brand-overlay">
+      <h1>Steven Roussel<span class="bar-overlay"></span></h1>
+    </div>
     <span class="lg-bar"></span>
     <div class="overlay-content">
-        <div class="nav">
-            <a href="../index.html" class="nav-link ">Home</a>
-            <a href="about.html" class="nav-link ">About Me</a>
-            <a href="contact.html" class="nav-link active-link">Contact</a>
-        </div>
+      <div class="nav">
+        <a href="../index.html" class="nav-link ">Accueil</a>
+        <a href="about.html" class="nav-link active-link">Qui suis-je ?</a>
+        <a href="contact.html" class="nav-link ">Contact</a>
+      </div>
     </div>
     <div class="social-overlay">
-        <a href="#" class="s-link-overlay strikethrough">Instagram</a>
-        <span class="slash-white"></span>
-        <a href="#" class="s-link-overlay strikethrough">YouTube</a>
+      <a href="https://instagram.com/stevenrsl" class="s-link-overlay strikethrough">Instagram</a>
+      <span class="slash-white"></span>
+      <a href="https://medium.com/@stevenrsl" class="s-link-overlay strikethrough">Medium</a>
     </div>
 </nav>
 <div class="contact">
-    <h2 class="contact-title">Let's work together <span class="contact-bar"></span></h2>
-    <p>For all professional requests, please send me an email at the following address, by clicking on it.</p>
+    <h2 class="contact-title">Travaillons ensemble ! <span class="contact-bar"></span></h2>
+    <p>Pour toute requette professionnelle, envoyez moi un mail à cette adresse.</p>
     <div class="mail">
-        <span id="email" class="strikethrough-black">contact@antoinecorniere.com</span>
+        <span id="email" class="strikethrough-black">hey@stevenroussel.com</span>
     </div>
     <div class="slide-btn-contact">
-        <a href="https://www.instagram.com/antocrne/" target="_blank" class="PreviousBtn strikethrough-black">Instagram</a>
+        <a href="https://www.instagram.com/stevenrsl/" target="_blank" class="PreviousBtn strikethrough-black">Instagram</a>
         <span class="slash-contact"></span>
-        <a href="#" class="NextBtn strikethrough-black">YouTube</a>
+        <a href="https://medium.com/@stevenrsl" class="NextBtn strikethrough-black">Medium</a>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -84,12 +88,13 @@
         var emailHeight = $("#email").height();
         let emailContent = document.getElementById("email").innerHTML;
 
-        document.getElementById("email").innerHTML = "Email copied to clipboard";
+        document.getElementById("email").innerHTML = "Email copié";
 
         setTimeout(function(){
-            document.getElementById("email").innerHTML = "contact@antoinecorniere.com";
+            document.getElementById("email").innerHTML = "hey@stevenroussel.com";
         }, 1200);
     });
 </script>
+
 </body>
 </html>
